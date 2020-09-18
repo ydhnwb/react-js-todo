@@ -15,7 +15,7 @@ export function PageEdit(){
             obj.isComplete = shouldMarkAsCompleted
         }
 
-        const response = await fetch(`http://btm-rn.herokuapp.com/api/v1/todo/${todo._id}`,{
+        const response = await fetch(`https://btm-rn.herokuapp.com/api/v1/todo/${todo._id}`,{
             headers:{
                 "Content-Type":"application/json"
             },

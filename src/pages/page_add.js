@@ -13,7 +13,7 @@ export function PageAdd() {
         const obj = {
             title: title
         }
-        const resp = await fetch("http://btm-rn.herokuapp.com/api/v1/todo", {
+        const resp = await fetch("https://btm-rn.herokuapp.com/api/v1/todo", {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"

@@ -7,7 +7,7 @@ export function PageHome() {
   const [todos, setTodos] = useState([]);
 
   const fetchTodos = async () => {
-    const resp = await fetch("http://btm-rn.herokuapp.com/api/v1/todo", {
+    const resp = await fetch("https://btm-rn.herokuapp.com/api/v1/todo", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -28,7 +28,7 @@ export function PageHome() {
 
 
   const deleteTodo = async (id) => {
-    const resp = await fetch(`http://btm-rn.herokuapp.com/api/v1/todo/${id}`,{
+    const resp = await fetch(`https://btm-rn.herokuapp.com/api/v1/todo/${id}`,{
       headers:{
         "Content-Type":"application/json"
       },
