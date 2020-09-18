@@ -1,10 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import {
   Route,
   BrowserRouter as Router,
   Switch,
-  Redirect,
   useHistory
 } from "react-router-dom";
 import "./App.css";

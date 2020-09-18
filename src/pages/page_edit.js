@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import {Link, useLocation} from "react-router-dom";
 
 export function PageEdit(){
@@ -27,7 +27,7 @@ export function PageEdit(){
 
         console.log(response)
 
-        if(response.success == true){
+        if(response.success === true){
             window.location.href = "/"
         }else{
             console.log("failed update")

@@ -111,7 +111,10 @@ export function PageHome() {
                 {todos.map((todo, index) => {
                   return (
                     <tr key={index}>
-                      <th scope="row">{todo.title}</th>
+                      {
+                        todo.isComplete ? <th scope="row"><s>{todo.title}</s></th> : <th scope="row">{todo.title}</th>
+                      }
+
                       <td>
                       <Link to={{
                           pathname:"/edit",
@@ -151,7 +154,7 @@ export function PageHome() {
                 todos.filter(td => td.isComplete === true).map((todo, index) => {
                   return (
                     <tr key={index}>
-                      <th scope="row">{todo.title}</th>
+                      <th scope="row"><s>{todo.title}</s></th>
                       <td>
                         <Link to={{
                           pathname:"/edit",
