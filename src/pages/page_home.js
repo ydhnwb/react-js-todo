@@ -75,7 +75,7 @@ export function PageHome() {
             aria-controls="pills-all"
             aria-selected="true"
           >
-            All
+            All todos
           </a>
         </li>
         <li className="nav-item">

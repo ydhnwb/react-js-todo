@@ -2,8 +2,7 @@ import React from "react";
 import {
   Route,
   BrowserRouter as Router,
-  Switch,
-  useHistory
+  Switch
 } from "react-router-dom";
 import "./App.css";
 
@@ -12,8 +11,7 @@ import { PageAdd } from "./pages/page_add";
 import { PageEdit } from "./pages/page_edit";
 
 function App() {
-  let history = useHistory();
-  return (
+   return (
     <div className="App">
       <Router>
         <div className="">
@@ -22,7 +20,7 @@ function App() {
             <PageHome/>
           </Route>
           <Route path="/add">
-            <PageAdd history={history}/>
+            <PageAdd/>
           </Route>
           <Route path="/edit">
             <PageEdit/>
