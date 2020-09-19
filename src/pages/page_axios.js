@@ -14,7 +14,6 @@ export function PageAxios() {
                 }
             })
     }
-
     useEffect(() => {
         fetchUsers()
     }, [])
