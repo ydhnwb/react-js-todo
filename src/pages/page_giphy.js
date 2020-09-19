@@ -17,7 +17,7 @@ export function PageGiphy(){
     const init = async () => {
         const randomQuery = ["eat", "fun", "sad", "dog"]
         const i = Math.floor(Math.random() * randomQuery.length - 1);
-        const result = await fetch(`http://api.giphy.com/v1/gifs/search?q=${randomQuery[i]}&api_key=nSy3pd7LToX57MK3qcW4gfslzZzm4VC5`)
+        const result = await fetch(`https://api.giphy.com/v1/gifs/search?q=${randomQuery[i]}&api_key=nSy3pd7LToX57MK3qcW4gfslzZzm4VC5`)
           .then(result => result.json())
           .then(res => res.data)
         updateGifs(result)
