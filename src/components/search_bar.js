@@ -6,7 +6,7 @@ export const SearchBar = ({ updateGifs, clearGif }) => {
     const listenInputValue = (e) => setQuery(e.target.value)
     const submit = async (e) => {
         e.preventDefault()
-        const result = await fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=nSy3pd7LToX57MK3qcW4gfslzZzm4VC5`)
+        const result = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=nSy3pd7LToX57MK3qcW4gfslzZzm4VC5`)
         .then(result => result.json())
         .then(res => res.data)
 
