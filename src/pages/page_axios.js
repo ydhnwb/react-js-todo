@@ -19,8 +19,8 @@ export function PageAxios() {
     }, [])
 
     return (
-        <div>
-            <table className="table-responsive">
+        <div className="table-responsive">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">id</th>
