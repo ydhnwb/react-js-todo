@@ -15,7 +15,7 @@ export function PageHome() {
       .then((res) => res.json())
       .catch((err) => console.log(err));
 
-    if (resp.results) {
+    if (resp !== undefined &&  resp.results) {
       setTodos(resp.results);
     } else {
       console.log("Failed to get data");
@@ -117,7 +117,7 @@ export function PageHome() {
 
                       <td>
                       <Link to={{
-                          pathname:"/edit",
+                          pathname:"/todo/edit",
                           state: {
                             passedTodo: todo
                           }}} 
@@ -166,7 +166,7 @@ export function PageHome() {
                         </Link>
                         <button onClick={() => ask(todo)} type="button" className="btn btn-danger m-2">
                           <i className="fa fa-trash"></i>
-                        </button>
+                        </button> 
                       </td>
                     </tr>
                   );
@@ -176,7 +176,7 @@ export function PageHome() {
           </div>
         </div>
       </div>
-      <Link to="/add" className="float">
+      <Link to="/todo/add" className="float">
         <i className="fa fa-plus my-float"></i>
       </Link>
     </div>
